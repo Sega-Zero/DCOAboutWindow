@@ -146,12 +146,12 @@
         if([self.activeView isEqualTo:self.infoView]) {
             
             [self showView:self.acknowledgmentsView];
-            self.acknowledgmentsButton.title = NSLocalizedString(@"Credits", nil);
+            self.acknowledgmentsButton.title = NSLocalizedString(@"Credits", "Caption of the 'Credits' button in the about window when acknowledgments are shown when useTextViewForAcknowledgments is YES.");
             
         } else {
             
             [self showView:self.infoView];
-            self.acknowledgmentsButton.title = NSLocalizedString(@"Acknowledgments", nil);
+            self.acknowledgmentsButton.title = NSLocalizedString(@"Acknowledgments", @"Caption of the 'Acknowledgments' button in the about window");
         }
 
     } else {
